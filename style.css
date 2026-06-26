@@ -60,15 +60,13 @@ table {
 
 .header{
     width:100%;
-    height:50px;
+    height:90px;
     background-color: rgba(87, 68, 87, 0.673);
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     z-index: 100;
-    padding-left:35px;
-    padding-right:35px;
 }
 .nav-list{
     display: flex;
@@ -78,20 +76,23 @@ table {
     color:white;
     transition: color 0.3s;
     font-family: "Roboto", sans-serif;
-    font-size: small;
-    padding: 22px 18px;
+    font-size: 25px;
+    padding: 30px 18px;
     position: relative;
 
 }
+.navbar{
+    padding-right:90px;
+}
 .nav-link:hover{
-    height:auto;
     background-color: rgba(128, 128, 128, 0.531);
     transition: color 0.3s, background-color 0.3s;
 }
 .logo{
     font-family: "Sansita Swashed", sans-serif;
-    font-size:10px;
+    font-size:20px;
     color:white;
+    padding-left:90px;
 }
 .nav-link:hover::after{
     content: "";
@@ -125,7 +126,7 @@ table {
 }
 .image{
     width:100%;
-    height:500px;
+    height:1300px;
     object-fit:cover;
 }
 .image-container-text{
@@ -140,6 +141,7 @@ table {
     justify-content:center;
 }
 .image-title{
+    font-size:80px;
     font-family: "Sansita Swashed", sans-serif;
 }
 .istanbul-text-highlight{
@@ -147,15 +149,17 @@ table {
 }
 .image-description{
     font-family: "Roboto", sans-serif;
-    font-size: small;
+    font-size: 22px;
     text-align:center;
 
 }
 .image-button{
     font-family: "Roboto", sans-serif;
-    margin-top:50px;
+    font-weight:300;
+    font-size:25px;
+    margin-top:100px;
     border-radius:50px;
-    padding:5px 25px;
+    padding:20px 60px;
     background:transparent;
     border: 1px solid rgba(203, 202, 202, 0.721);
     color:white;
@@ -166,7 +170,10 @@ table {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    padding-top:200px;
+    padding-bottom:200px;
+    padding-left:100px;
+    padding-right:100px;
 }
 .feature-card{
     flex:1;
@@ -176,14 +183,13 @@ table {
     gap:10px;
 }
 .feature-card__icon {
-    font-size: 20px;
+    font-size: 40px;
+    font-weight:100;
     color: rgb(237, 25, 25);
-    background-color: rgb(255, 255, 255);
-    height:40px;
-    width:40px;
-    border:2px;
-    border-radius:50%;
-    border-color: black;  
+    height:90px;
+    width:90px;
+    border:1px solid rgba(128, 128, 128, 0.304);
+    border-radius:50%; 
     display:flex;
     align-items: center;
 }
@@ -194,16 +200,17 @@ table {
 }
 .feature-card__title {
     font-family: "Sansita Swashed", sans-serif;
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 0.5rem;
 
 }
 .feature-card__text {
+    font-size:30px;
     font-family: "Roboto", sans-serif;
     
 }
 .features{
-    margin:70px 20px;
+    width:100%;
     
 }
 .portfolio{
@@ -211,26 +218,34 @@ table {
     width:100%;
 }
 .portfolio-container{
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .portfolio-grid{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
     justify-content: center;
-    gap:30px;
+    gap:50px;
+    padding:0px 50px;
+}
+.portfolio-item img{
+    width: 100%;
+    display: block;
 }
 .portfolio-container{
     padding:43px;
 }
 .section-header{
-    margin-bottom:35px;
+    margin-bottom:90px;
+    margin-top:60px;
 }
 .section-title{
     font-family: "Sansita Swashed", sans-serif;
-    font-size:20px;
-    padding-bottom:4px;
+    font-size:40px;
+    padding-bottom:10px;
     position:relative
 }
 .section-title::after{
@@ -239,23 +254,25 @@ table {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1.3px;
+    height: 3px;
     background-color: rgb(237, 25, 25);
     transition: width 0.3s;
     
 }
 .portfolio-btn{
     background-color:rgb(237, 25, 25);
-    margin-top: 35px;
+    margin-top: 80px;
+    margin-bottom:55px;
     border-radius: 50px;
     border:none;
     cursor:pointer;
 }
 .btn-more{
-    padding: 11px 35px;
+    padding: 20px 70px;
     font-family: "Roboto", sans-serif;
-    font-size:small;
+    font-size:25px;
     color:white;
+    font-weight:400;
 }
 
 .testimonials-container{
@@ -275,12 +292,12 @@ table {
 
 .testimonials-header{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .comment-title{
     font-family: "Sansita Swashed", sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 700;
     position:relative;
     padding-bottom:4px;
@@ -291,7 +308,7 @@ table {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1.3px;
+    height: 3px;
     background-color: rgb(237, 25, 25);
     transition: width 0.3s;
 }
@@ -326,7 +343,7 @@ table {
     font-size: 20px;
     color: #454545b4;
     margin-bottom: 45px;
-    text-align: center;
+    text-align: start;
     font-weight: 200;
 }
 
@@ -339,20 +356,22 @@ table {
 }
 
 .person-profile{
-    width: 55px;
-    height: 55px;
-    border:3px;
+    width: 80px;
+    height: 80px;
+    border:3px solid rgb(151, 149, 149);
     border-radius: 50%;
-    background: #4545456f;
+    background: #73717146;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(0, 0, 0, 0.376);
-    font-size: 24px;
+    color: rgba(0, 0, 0, 0.184);
+    font-size: 40px;
 }
 
 .person-name{
-    font-size: 18px; 
+    font-family:"Roboto", sans-serif;
+    font-size: 23px; 
+    font-weight:600;
 }
 
 .slider-dots{
@@ -389,6 +408,7 @@ table {
     width:100%;
 }
 .subscribe-container{
+    width:100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -396,11 +416,14 @@ table {
 }
 .subscribe-content{
     color:white;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding:0px 50px;
 
 }
 .subscribe-btn-container{
-    width: 190px;
-    height:50px;
+    width: 290px;
+    height:80px;
     border-radius:50px;
     border:none;
     margin-right:80px;
@@ -410,11 +433,11 @@ table {
 }
 .subscribe-title{
     font-family: "Sansita Swashed", sans-serif;
-    font-size: 18px;
+    font-size: 40px;
     position:relative;
     width: fit-content;
     padding-bottom:3px;
-    margin-bottom:15px;
+    margin-bottom:35px;
 }
 .subscribe-title::after{
     content: "";
@@ -422,7 +445,7 @@ table {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1.3px;
+    height: 3px;
     background-color: rgb(237, 25, 25);
     transition: width 0.3s;
  }
@@ -430,10 +453,11 @@ table {
  .subscribe-btn{
     color:white;
     font-family: "Roboto", sans-serif;
+    font-size:25px;
  }
  .subscribe-information{
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    font-size:25px;
  }
  .about-container{
     display:flex;
