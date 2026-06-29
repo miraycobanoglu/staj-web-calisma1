@@ -231,6 +231,8 @@ table {
     border-radius:50%; 
     display:flex;
     align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 .feature-card__content {
     display: flex;
@@ -851,6 +853,19 @@ input[type="submit"]:hover{
 }
 .comment-title{
     font-size:30px;
+}
+.feature-card__icon {
+    font-size: 20px;
+    font-weight:100;
+    color: rgb(237, 25, 25);
+    height:40px;
+    width:40px;
+    border:1px solid rgba(128, 128, 128, 0.304);
+    border-radius:50%; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 }
 
