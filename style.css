@@ -619,8 +619,10 @@ table {
     justify-content: center;
     align-items: start;
     flex-wrap: wrap;
-    gap:150px;
+    gap:320px;
     padding-top:100px;
+    padding-left:30px;
+    padding-right:30px;
 }
 .contact-title{
     font-family: "Sansita Swashed", sans-serif;
@@ -647,6 +649,12 @@ table {
     margin-bottom:30px;
 
  }
+ .contact-form{
+    width:40%;
+ }
+ .input-group{
+    width:100%;
+ }
 input{
     width: 100%;
     padding: 10px 0;
@@ -656,6 +664,9 @@ input{
     outline: none;
     font-size: 22px;
     color: #333;
+}
+.input-group-message{
+    width:100%;
 }
 
 input::placeholder,
@@ -674,6 +685,14 @@ textarea{
     resize: none;
     padding: 12px 0;
     font-size: 22px;
+}
+.textarea-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+textarea{
+    width:100%;
 }
 
 button,
@@ -795,9 +814,6 @@ input[type="submit"]:hover{
  .about-stats{
     padding-left:0px;
  }
- .subscribe-container{
-
- }
  .portfolio-container{
     padding:0px;
 }
@@ -867,5 +883,15 @@ input[type="submit"]:hover{
     justify-content: center;
     flex-shrink: 0;
 }
+}
+@media(max-width:1055px){
+    .contact-content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:100px;
+    }
+    .input-row{
+    }
 }
 
